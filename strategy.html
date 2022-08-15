@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>王者荣耀</title>
+		<link rel="shortcut icon"href="imges/bitbug.ico">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/strategy.css" />
+		<script type="text/javascript" src="js/ziti.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+	</head>
+	<body>
+		<div class="wrap" >
+			<!--头部开始 -->
+			<div class="wz_top_box">
+				<div class="wz_top">
+					<div class="logo_cont">
+						<a href="javascript:;">
+							<img src="imges/logo.png" alt="logo"/>
+						</a>
+						<div class="logo_title">
+							<h1>王者荣耀</h1>
+							<p>全世界撸友，一起开团</p>
+						</div>
+					</div>
+					<div class="download">
+						<a href="javascript:;">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="wz_bottom">
+				<ul>
+						<li>
+						
+						<a href="index.html"></a>
+					</li>
+					<li>
+						
+						<a href="video.html"></a>
+					</li>
+					<li>
+						
+						<a href="strategy.html"></a>
+					</li>
+					<li>
+						<a href="matchindex.html"></a>
+					</li>
+				</ul>
+			</div>
+			<!--头部结束 -->
+			<!--搜索框开始 -->
+			<div class="search">
+				<form>
+					<span class="search_seach"></span>
+					<input type="text" placeholder="请输入你想要搜索的英雄名" />
+					
+				</form>
+			</div>
+			<!--搜索框结束 -->
+			<!--广告框开始 -->
+			<div class="wz_banner">
+				<ul class="clearfix">
+					<li>
+						<a href="javascript:;">
+                        <img src="imges/wz_banner3.jpg">
+                   		</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+                        <img src="imges/wz_banner1.jpg">
+                   		</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+                        <img src="imges/wz_banner2.jpg">
+                   		</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+                        <img src="imges/wz_banner3.jpg">
+                   		</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+                        <img src="imges/wz_banner1.jpg">
+                   		</a>
+					</li>
+				</ul>
+				<ul class="wz_banner_index" id="dot">
+	                <li class="no"></li>
+	                <li></li>
+	                <li></li>
+               	</ul>
+				<div class="wz_banner_bg">
+					<a href="javascript:;">看王者如何玩刘邦</a>
+				</div>
+				
+			</div>
+			<!--广告框结束-->
+			<!--导航开始-->
+			<div class="strategy_cont clearfix">
+				<div class="strategy_nav">
+					<ul>
+						<li class="strategy_nav_bg">
+							<a href="javascript:;">最新</a>
+							<span></span>
+						</li>
+						<li >
+							<a href="javascript:;">新手</a>
+							<span></span>
+						</li>
+						<li>
+							<a href="javascript:;">英雄</a>
+							<span></span>
+						</li>
+						<li>
+							<a href="javascript:;">官方</a>
+							<span></span>
+						</li>
+						<li>
+							<a href="javascript:;">同人</a>
+							<span class=""></span>
+						</li>
+					</ul>
+				</div>
+				<div class="wz_strategy clearfix">
+				
+				<ul class="clearfix">
+					
+				</ul>
+			</div>
+			</div>
+			<div class="btn">正在加载中...</div>
+			<!--视频结束-->
+		</div>
+		<script id="wz_strategy" type="text/html">
+		<%for(var i=0;i<num;i++){%>
+			<li>
+				<a href="http://pvp.qq.com<%=result[i].url%>"><img src="<%=result[i].img%>"/>
+					<div class="wz_strategy_left">
+						<span><%=result[i].title%></span>
+						<p><%=result[i].content%></p>
+					</div>
+					<div class="wz_strategy_right">
+						<p><span><%=result[i].read%></span><samp>&nbsp;</samp></p>
+						<p><%=result[i].month%>-<%=result[i].date%></p>
+						</div>
+						</a>
+			</li>
+			<%}%>
+		</script>
+		<script src="js/template-native.js"></script>	
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script src="js/ajaxlianjie.js"></script>
+        <script src="js/strategy.js"></script>
+	</body>
+</html>

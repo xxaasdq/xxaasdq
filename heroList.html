@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>王者荣耀</title>
+		<link rel="shortcut icon"href="imges/bitbug.ico">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/heroList.css" />
+		<script type="text/javascript" src="js/ziti.js"></script>
+		
+	</head>
+	<body>
+		<div class="wrap" >
+			<!--头部开始 -->
+			<div class="wz_top_box">
+				<div class="wz_top">
+					<div class="logo_cont">
+						<a href="javascript:;">
+							<img src="imges/logo.png" alt="logo"/>
+						</a>
+						<div class="logo_title">
+							<h1>王者荣耀</h1>
+							<p>全世界撸友，一起开团</p>
+						</div>
+					</div>
+					<div class="download">
+						<a href="javascript:;">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="wz_bottom">
+				<ul>
+						<li>
+						
+						<a href="index.html"></a>
+					</li>
+					<li>
+						
+						<a href="video.html"></a>
+					</li>
+					<li>
+						
+						<a href="strategy.html"></a>
+					</li>
+					<li>
+						<a href="matchindex.html"></a>
+					</li>
+				</ul>
+			</div>
+			<!--头部结束 -->
+			<!--内容开始-->
+			<div class="hero_nav">
+				<ul class="clearfix">
+					<li class="hero_current"><a href="javascript:;">全部</a></li>
+					<li><a href="javascript:;">战士</a></li>
+					<li><a href="javascript:;">法师</a></li>
+					<li><a href="javascript:;">坦克</a></li>
+					<li><a href="javascript:;">刺客</a></li>
+					<li><a href="javascript:;">射手</a></li>
+					<li><a href="javascript:;">辅助</a></li>
+				</ul>
+			</div>
+			<!--英雄列表开始-->
+			<div class="hero_list">
+				<ul class="clearfix">
+					<!--<li>
+						<a href="javascript:;">
+							<img src="imges/yx/105.jpg" />
+							<p>廉颇</p>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+			<!--英雄列表结束-->
+			<!--内容结束-->
+		</div>
+	</body>
+	<script id="hero" type="text/html">
+		<%for(var i=0;i<result.length;i++){%>
+			<li>
+				<a href="http://pvp.qq.com/m/m201606/herodetail/<%=result[i].img%>.shtml">
+					<img src="imges/yx/<%=result[i].img%>.jpg" />
+					<p><%=result[i].hero%></p>
+				</a>
+			</li>
+		<%}%>
+	</script>
+	<script src="js/template-native.js"></script>	
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script src="js/ajaxlianjie.js"></script>
+    <script src="js/heroList.js"></script>
+</html>

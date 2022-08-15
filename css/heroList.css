@@ -1,0 +1,62 @@
+body{
+	background:#F1F1F1;
+}
+.hero_nav{
+	margin-top: 60px;
+	
+}
+.hero_nav ul{
+	
+}
+.hero_nav ul li{
+	width: 14.28%;
+	float: left;
+	text-align: center;
+	border-bottom: 1px solid #D4D9DE;
+}
+.hero_nav ul li a{
+	display: block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	font-size: 0.9rem;
+}
+.hero_nav ul .hero_current a{
+	background: url(../imges/hero_navBg.png) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	font-size: 0.95rem;
+	border-bottom: none;
+}
+.hero_list{
+	margin-top:10px;
+	width: 100%;
+	padding-bottom: 45px;
+}
+.hero_list ul{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.hero_list ul li{
+	width: 25%;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.hero_list ul li a{
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.hero_list ul li a img{
+	width: 75%;
+	height: 75%;
+	margin: 0 auto;
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+}
+.hero_list ul li a p{
+	margin-top: 0.2rem;
+	font-size: 0.8rem;
+	color: #6d6d6f;
+}

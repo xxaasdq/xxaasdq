@@ -1,0 +1,250 @@
+html,body,div,ul,li,form,input,textarea,img,p,h1,h2,h3,h4,h5,h6,nav,header,main,section,a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:11px;
+}
+body{
+ 
+    font-family: "microsoft YaHei","sans-serif";
+    color:#333;
+    box-sizing: border-box;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+i,s,b,u{
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+.clearfix::after{
+    content:"";
+    clear:both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height:0;
+}
+.clearfix{
+    zoom:1;
+    clear:both
+}
+img{
+    border:0;
+    display: block;/*为了清除底部间隙*/
+}
+input,textarea{
+    outline: none;
+    border:none;
+}
+
+[class^=icon_]{
+    background:url('../image/sprites.png') no-repeat;
+    background-size:200px 200px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w50{
+    width: 50%;
+}
+.bb{
+    border-bottom:1px solid #e0e0e0;
+}
+.br{
+    border-right:1px solid #e0e0e0;
+}
+.wrap{
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+/*======================头部开始=================== */
+.wz_top_box{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height:45px;
+    width: 100%;
+    
+}
+.wz_top{
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	width: 100%;
+	height: 45px;
+	background-size: 100% 45px;
+	background: url(../imges/hd.jpg);
+	position:relative;
+	 box-sizing: border-box;
+}
+.logo_cont{
+	position: absolute;
+	top:8px;
+	left: 16px;
+	font-size: 11px;
+	width: 200px;
+}
+.logo_cont a{
+	display: block;
+	width: 36px;
+	margin-right: 5px;
+}
+.logo_cont a img{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.logo_title{
+	padding-left: 40px;
+	margin-top: -2px;
+}
+.logo_title h1{
+	color: #ffffff;
+	font-weight: bold;
+}
+.logo_title p{
+	color: #7e859e;
+}
+.download{
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	height: 45px;
+	width: 87px;
+	line-height: 45px;
+}
+.download a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../imges/down.png) no-repeat;
+	background-size: 87px 30px;
+	
+}
+.download img{
+	width: 87px;
+	height: 30px;
+}
+/*======================头部结束=================== */
+/*======================尾部开始=================== */
+.wz_bottom{
+	position: fixed;
+	z-index: 12;
+	bottom: 0;
+	left: 0;
+	height:45px;
+	width: 100%;
+}
+.wz_bottom ul{
+	max-width: 640px;
+	min-width: 300px;
+	width: 100%;
+	height: 45px;
+	margin: 0 auto;
+}
+.wz_bottom ul li{
+	width: 25%;
+	float: left;
+}
+.wz_bottom ul li:nth-child(1){
+	background: url(../imges/navnew11.png) no-repeat;
+	background-position:-0% -0px;
+	background-size: 400% 45px;
+}
+.wz_bottom ul li:nth-child(2){
+	background: url(../imges/navnew11.png) no-repeat;
+	background-position:34% -0px;
+	background-size: 400% 45px;
+}
+.wz_bottom ul li:nth-child(3){
+	background: url(../imges/navnew11.png) no-repeat;
+	background-position:67% -0px;
+	background-size: 400% 45px;
+}
+.wz_bottom ul li:nth-child(4){
+	background: url(../imges/navnew11.png) no-repeat;
+	background-position:100% -0px;
+	background-size: 400% 45px;
+}
+.wz_bottom ul li a{
+	width: 100%;
+	display:block;
+	height: 45px;
+}
+/*======================尾部结束=================== */
+/*======================广告开始=================== */
+.wz_banner{
+	margin-top: 45px;
+    overflow: hidden;
+    position: relative;
+}
+.wz_banner ul:first-child{
+    width: 500%;
+    transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+}
+.wz_banner ul:first-child li{
+    width: 20%;
+    float: left;
+}
+.wz_banner ul:first-child li a{
+    display: block;
+    width: 100%;
+}
+.wz_banner ul:first-child li a img{
+    width: 100%;
+}
+.wz_banner_bg{
+	position: absolute;
+	bottom: 0px;
+	background: url(../imges/slide_mask.png);
+	background-size: 100% 44px;
+	height: 44px;
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	
+}
+.wz_banner_bg a{
+	display: block;
+	color: #FFFFFF;
+	font-size: 18px;
+	float: left;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 20px;
+}
+.wz_banner_index  {
+
+	z-index: 10;
+	position: absolute;
+	bottom: 18px;
+	right:30px;
+}
+.wz_banner_index li{
+	width:9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	float: left;
+	margin-left: 14px;
+}
+.wz_banner_index .no{
+	background: blue;
+}
+/*======================广告结束=================== */

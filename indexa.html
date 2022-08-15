@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/weui.min.js"></script>
+		<style>
+			.jf-from {
+				font-size: 15px;
+				padding: 16px;
+				padding-bottom: 80px;
+			}
+			
+			.weui-cell {
+				padding: 8px 0;
+			}
+			.weui-cell__bd{
+				display: -webkit-box;
+			    display: -webkit-flex;
+			    display: flex;
+			}
+			.weui-cell__bd>span{
+				flex: 1;
+			}
+			.weui-cell__bd .juli {
+				text-decoration: none;
+				padding-right: 20px;
+			}
+			
+			.weui-input {
+				text-align: center;
+   				 flex: 1;
+			}
+			
+			.box1 {
+				border-bottom: 1px solid #000000;
+				text-align: center;
+			}
+			
+			s{
+				text-decoration: none;
+			}
+			.red{
+				color: red;
+			}
+			.blue{
+				color: blue;
+			}
+			.zong1{
+				position: fixed;
+				width: 99%;
+				bottom: 0;
+				margin: 0 auto;
+				background: #FFFFFF;
+				border: 1px solid #000000;
+			}
+			.yin{
+				text-align: center;
+				
+			}
+			.yin span{
+				padding: 5px 100px;
+				background: #06AE56;
+				color: #FFFFFF;
+				font-size: 15px;
+			}
+			.zong{
+				padding: 10px 0;
+				font-size: 16px;
+				color: #06AE56;
+				display: -webkit-box;
+			    display: -webkit-flex;
+			    display: flex;
+			}
+			.zong span{
+				flex: 1;
+				text-align: center;
+			}
+			.show{
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="jf-from">
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">特码47.5</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a1" data-pe1="47.5" data-shui="0.03" placeholder="金额">
+							<span>水:<s class="s1">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj1" placeholder="0">
+							<span class="zz1 blue">总:<s class="z1">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">特码42.5</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a2" data-pe1="42.5" data-shui="0.13" placeholder="金额">
+							<span>水:<s class="s2">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_actives">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj2" placeholder="0">
+							<span class="zz2 blue">总:<s class="z2">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">一肖<span class="pe3">2.114</span></label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a3" data-pe1="2.114" data-pe2="1.8" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s3">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj3" placeholder="0">
+							<span><input name="a3" class="check3" type="checkbox" >
+							<span style="padding-right: 5px;">虎</span>
+							<span class="zz3 blue">总:<s class="z3">0</s></span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">二连<span class="pe4">4.8</span></label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a4" data-pe1="4.8" data-pe2="4.05" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s4">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj4" placeholder="0">
+							<span><input name="a4" class="check4" type="checkbox" >
+							<span style="padding-right: 5px;">虎</span>
+							<span class="zz4 blue">总:<s class="z4">0</s></span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">三连<span class="pe5">12.3</span></label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a5" data-pe1="12.3" data-pe2="10.3" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s5">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj5" placeholder="0">
+							<span><input name="a5" class="check5" type="checkbox" >
+							<span style="padding-right: 5px;">虎</span>
+							<span class="zz5 blue">总:<s class="z5">0</s></span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">四连<span class="pe6">35.5</span></label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a6" data-pe1="35.5" data-pe2="28.9" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s6">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj6" placeholder="0">
+							<span><input name="a6" class="check6" type="checkbox" >
+							<span style="padding-right: 5px;">虎</span>
+							<span class="zz6 blue">总:<s class="z6">0</s></span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">五连<span class="pe7">121</span></label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a7" data-pe1="121" data-pe2="99.1" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s7">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj7" placeholder="0">
+							<span><input name="a7" class="check7" type="checkbox" >
+							<span style="padding-right: 5px;">虎</span>
+							<span class="zz7 blue">总:<s class="z7">0</s></span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">尾1.8</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a8" data-pe1="1.8" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s8">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">尾中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj8" placeholder="0">
+							<span class="zz8 blue">总:<s class="z8">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">尾不中2.211</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a9" data-pe1="2.211" data-shui="0.003" placeholder="金额">
+							<span>水:<s class="s9">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj9" placeholder="0">
+							<span class="zz9 blue">总:<s class="z9">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">三中三755</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a10" data-pe1="755" data-shui="0.15" placeholder="金额">
+							<span>水:<s class="s10">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj10" placeholder="0">
+							<span class="zz10 blue">总:<s class="z10">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">二中二65.8</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a11" data-pe1="65.8" data-shui="0.15" placeholder="金额">
+							<span>水:<s class="s11">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj11" placeholder="0">
+							<span class="zz11 blue">总:<s class="z11">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="box1">
+				<ul>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">单双大小1.95</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input a12" data-pe1="1.95" data-shui="0.013" placeholder="金额">
+							<span>水:<s class="s12">0</s></span>
+						</div>
+					</li>
+					<li class="weui-cell weui-cell_active">
+						<div class="weui-cell__hd"><label class="weui-label">中</label></div>
+						<div class="weui-cell__bd">
+							<input id="js_input" class="weui-input zj12" placeholder="0">
+							<span class="zz12 blue">总:<s class="z12">0</s></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+		</section>
+		<div class="zong1">
+			<div class="yin">
+				<span class="open" data-type = "1">隐藏</span>
+			</div>
+			<div class="zong">
+				<span>总金额:<s class="zje">0</s></span><span>水:<s class="zsi">0</s></span><span>结果:<s class="zjg">0</s></span>
+			</div>
+		</div>
+	</body>
+	<script>
+		jishu(1,1);
+		jishu(2,1);
+		jishu(3,2);
+		jishu(4,2);
+		jishu(5,2);
+		jishu(6,2);
+		jishu(7,2);
+		jishu(8,1);
+		jishu(9,1);
+		jishu(10,1);
+		jishu(11,1);
+		jishu(12,1);
+	   function jishu(a,c){
+	   		var b=1
+			$('.a'+a).on('change', function() {
+				if(c==2){
+					if($('.check'+a).prop('checked')){
+						b=2;
+					}else{
+						b=1;
+					}
+				}
+				var thar = this;
+				$('.s'+a).html(toDecimal2($(thar).val() * $(thar).attr('data-shui')))
+				if($(this).val()>0&&$('.zj'+a).val()>0){
+					$('.z'+a).html(toDecimal2($('.zj'+a).val() * $('.a'+a).attr('data-pe'+b) - $('.a'+a).val() + parseFloat($('.s'+a).html())))
+				}else{
+					$('.z'+a).html(parseFloat($('.s'+a).html())-$('.a'+a).val());
+				}
+				if($('.z'+a).html()>0){
+					$('.zz'+a).attr('class','zz'+a+' red')
+				}else{
+					$('.zz'+a).attr('class','zz'+a+' blue')
+				}
+				zongheji();
+			})
+			$('.zj'+a).on('change', function() {
+				var thar = this;
+				if(c==2){
+					if($('.check'+a).prop('checked')){
+						b=2;
+					}else{
+						b=1;
+					}
+				}
+				if($(this).val()>0&&$('.a'+a).val()>0){
+					$('.z'+a).html(toDecimal2($('.zj'+a).val() * $('.a'+a).attr('data-pe'+b) - $('.a'+a).val() + parseFloat($('.s'+a).html())))
+				}else{
+					$('.z'+a).html(parseFloat($('.s'+a).html())-$('.a'+a).val());
+				}
+				if($('.z'+a).html()>0){
+					$('.zz'+a).attr('class','zz'+a+' red')
+				}else{
+					$('.zz'+a).attr('class','zz'+a+' blue')
+				}
+				zongheji();
+			})
+			if(c==2){
+				$('.check'+a).on('click',function(){
+					if(c==2){
+						if($('.check'+a).prop('checked')){
+							b=2;
+							$('.pe'+a).html($('.a'+a).attr('data-pe'+b))
+						}else{
+							b=1;
+							$('.pe'+a).html($('.a'+a).attr('data-pe'+b))
+						}
+					}
+					if($('.zj'+a).val()>0&&$('.a'+a).val()>0){
+						$('.z'+a).html(toDecimal2($('.zj'+a).val() * $('.a'+a).attr('data-pe'+b) - $('.a'+a).val() + parseFloat($('.s'+a).html())))
+					}else{
+						$('.z'+a).html(parseFloat($('.s'+a).html())-$('.a'+a).val());
+					}
+					if($('.z'+a).html()>0){
+						$('.zz'+a).attr('class','zz'+a+' red')
+					}else{
+						$('.zz'+a).attr('class','zz'+a+' blue')
+					}
+					zongheji();
+				})
+			}
+		}
+	   $('.open').on('click',function(){
+	   		if($(this).attr('data-type')==1){
+	   			$('.jf-from>div').each(function(){
+	   				if($(this).find('input').eq(0).val()==''){
+	   					$(this).addClass('show')
+	   				}else{
+	   					$(this).removeClass('show')
+	   				}
+	   			})
+	   			$(this).attr('data-type','0')
+	   			$(this).html('显示');
+	   		}else{
+	   			$(this).attr('data-type','1')
+	   			$('.jf-from>div').each(function(){
+	   				$(this).removeClass('show')
+	   			})
+	   			$(this).html('隐藏');
+	   			
+	   		}
+	   })
+	   function zongheji(){
+	   		var zje = 0;
+	   		var zsi = 0;
+	   		var zjg = 0;
+		   	for (var i =1;i<13;i++) {
+		   		zje=parseFloat(zje)+Number($('.a'+i).val());
+		   		zsi=parseFloat(zsi)+Number($('.s'+i).html());
+		   		zjg=parseFloat(zjg)+Number($('.z'+i).html());	
+		   	}
+		   	$('.zje').html(toDecimal2(zje));
+		   	$('.zsi').html(toDecimal2(zsi));
+		   	$('.zjg').html(toDecimal2(zjg));
+		   	if(Number($('.zjg').html())<0){
+		   		$('.zjg').attr('class','zjg blue')
+		   	}else{
+		   		$('.zjg').attr('class','zjg red')
+		   	}
+	   }
+		function toDecimal2(x) {
+			var f = parseFloat(x);
+			if(isNaN(f)) {
+				return false;
+			}
+			var f = Math.round(x * 100) / 100;
+			var s = f.toString();
+			var rs = s.indexOf('.');
+			if(rs < 0) {
+				rs = s.length;
+				s += '.';
+			}
+			while(s.length <= rs + 1) {
+				s += '0';
+			}
+			return s;
+		}
+
+		function fomatFloat(src, pos) {
+			return Math.round(src * Math.pow(10, pos)) / Math.pow(10, pos);
+		}
+	</script>
+
+</html>
